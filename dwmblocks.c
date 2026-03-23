@@ -119,8 +119,10 @@ int getstatus(char *str, char *last)
 {
 	strcpy(last, str);
 	str[0] = '\0';
+    strcat(str, padleft);
 	for (unsigned int i = 0; i < LENGTH(blocks); i++)
 		strcat(str, statusbar[i]);
+    strcat(str, padright);
 	str[strlen(str)-strlen(delim)] = '\0';
 	return strcmp(str, last);//0 if they are the same
 }
@@ -159,7 +161,7 @@ void pstdout()
 void statusloop()
 {
 	setupsignals();
-	int i = 0;
+	uint i = 0;
 	getcmds(-1);
 	while (1) {
 		getcmds(i++);
