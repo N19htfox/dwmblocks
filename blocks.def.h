@@ -7,7 +7,7 @@ static const Block blocks[] = {
     delim_block,
     { "",       "~/.local/share/dwmblocks/blocks/net",     0,                  2 },
     delim_block,
-    { "",       "~/.local/share/dwmblocks/blocks/power",   10,                 3 },
+    { "",       "~/.local/share/dwmblocks/blocks/power",   0,                  3 },
     delim_block,
     { "",       "~/.local/share/dwmblocks/blocks/time",    1,                  4 },
 };
