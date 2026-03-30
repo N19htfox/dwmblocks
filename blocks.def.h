@@ -5,11 +5,13 @@ static const Block blocks[] = {
 	/*Icon*/	/*Command*/	                               /*Update Interval*/ /*Update Signal*/
     { "",       "~/.local/share/dwmblocks/blocks/ime",     0,                  1 },
     delim_block,
-    { "",       "~/.local/share/dwmblocks/blocks/net",     0,                  2 },
+    { "",       "~/.local/share/dwmblocks/blocks/volume",  0,                  2 },
     delim_block,
-    { "",       "~/.local/share/dwmblocks/blocks/power",   0,                  3 },
+    { "",       "~/.local/share/dwmblocks/blocks/net",     0,                  3 },
     delim_block,
-    { "",       "~/.local/share/dwmblocks/blocks/time",    1,                  4 },
+    { "",       "~/.local/share/dwmblocks/blocks/power",   0,                  4 },
+    delim_block,
+    { "",       "~/.local/share/dwmblocks/blocks/time",    1,                  5 },
 };
 
 //sets delimiter between status commands. NULL character ('\0') means no delimiter.
